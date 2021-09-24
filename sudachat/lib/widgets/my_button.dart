@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class MyButton extends StatelessWidget {
    MyButton({ this.color, required this.title, required this.onPressed});
-   final Color color;
+   final Color? color;
    final String title;
    final VoidCallback onPressed;
 
