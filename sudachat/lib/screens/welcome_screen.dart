@@ -46,10 +46,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
 
                   title: "Register",
                   onPressed: () {
-                    // Navigator.of(context)
-                    //     .push(MaterialPageRoute(builder: (context) {
-                    //   return RegistrationScreen();
-                    // }));
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (context) {
+                      return RegistrationScreen();
+                    }));
                   }),
             ]),
       ),
