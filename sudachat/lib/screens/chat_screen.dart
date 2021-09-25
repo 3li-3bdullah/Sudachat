@@ -35,15 +35,16 @@ class _ChatScreenState extends State<ChatScreen> {
       appBar: AppBar(
         backgroundColor: Colors.green,
         title: Row(children: <Widget>[
-          Image.asset("images/chat.jpg"),
+          Container(
+              decoration: BoxDecoration(image: DecorationImage(
+                  image: AssetImage("images/chat.jpg") , fit: BoxFit.cover), shape:BoxShape.circle),
+            ),
           // SizedBox(height: 10),
           Expanded(child: Text("MessageMe"))
         ]),
         actions: <Widget>[
           IconButton(
-              onPressed: () {
-                //add here logout function
-              },
+              onPressed: () {},
               icon: Icon(Icons.close)),
         ],
       ),
