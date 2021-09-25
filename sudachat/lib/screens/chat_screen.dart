@@ -33,11 +33,11 @@ class _ChatScreenState extends State<ChatScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green[800],
+        backgroundColor: Colors.green,
         title: Row(children: <Widget>[
           Image.asset("images/chat.jpg"),
-          SizedBox(height: 10),
-          Text("MessageMe")
+          // SizedBox(height: 10),
+          Expanded(child: Text("MessageMe"))
         ]),
         actions: <Widget>[
           IconButton(
@@ -47,19 +47,72 @@ class _ChatScreenState extends State<ChatScreen> {
               icon: Icon(Icons.close)),
         ],
       ),
-      body: SafeArea(
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-            Container(),
-            Container(
+      body: Stack(
+          children: <Widget>[
+             //Column(
+            //  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //   crossAxisAlignment: CrossAxisAlignment.end,
+            //   children: <Widget>[
+           // Container(),
+           Positioned(
+                bottom: 0,
+                child: Container(
+                  height: 60,
+                  width: MediaQuery.of(context).size.width,
+                  child: Column(children: <Widget>[
+                    Container(
+                      decoration: BoxDecoration(
+                          border: Border(top: BorderSide(color: Colors.grey))),
+                      child: Row(children: <Widget>[
+                        IconButton(
+                            icon: Icon(Icons.camera_alt_outlined,
+                                color: Colors.purple),
+                            onPressed: () {}),
+                        Container(
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 5, vertical: 5),
+                            width: MediaQuery.of(context).size.width - 70,
+                            child: TextFormField(
+                              decoration: InputDecoration(
+                                hintText: "أكتب هنا",
+                                filled: true,
+                                fillColor: Colors.grey[200],
+                                suffixIcon: IconButton(
+                                    icon: Icon(Icons.send, color: Colors.green),
+                                    onPressed: () {}),
+                                contentPadding: EdgeInsets.all(5),
+                                focusedBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(60),
+                                    borderSide:
+                                        BorderSide(style: BorderStyle.none)),
+                                enabledBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(60),
+                                    borderSide:
+                                        BorderSide(style: BorderStyle.none)),
+                                errorBorder: InputBorder.none,
+                                disabledBorder: InputBorder.none,
+                              ),
+                            )),
+                      ]),
+                    )
+                  ]),
+                )),
+           
+         // ])
+          ],
+          ),
+    );
+  }
+}
+/* 
+ Container(
                 decoration: BoxDecoration(
                   border:
-                      Border(top: BorderSide(color: Colors.green[800], width: 2)),
+                      Border(top: BorderSide(color: Colors.green, width: 2)),
                 ),
                 child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                   // crossAxisAlignment: CrossAxisAlignment.center,
+                   mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Expanded(
                         child: TextField(
@@ -79,7 +132,4 @@ class _ChatScreenState extends State<ChatScreen> {
                                   color: kRegisterColor,
                                   fontSize: 18)))
                     ])),
-          ])),
-    );
-  }
-}
+*/
