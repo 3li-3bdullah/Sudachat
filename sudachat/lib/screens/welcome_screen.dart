@@ -21,7 +21,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Column(children: <Widget>[
-                Container(child: Image.asset("images/chat.png")),
+                Container(child: Image.asset("images/chat.jpg")),
                 Text("حبابك 10",
                     style: TextStyle(
                         fontSize: 40,
