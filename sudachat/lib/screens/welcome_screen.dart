@@ -34,10 +34,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 color: kSignColor,
                 title: "Sigin in",
                 onPressed: () {
-                  // Navigator.of(context)
-                  //     .push(MaterialPageRoute(builder: (context) {
-                  //   return SignInScreen();
-                  // }));
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) {
+                    return SignInScreen();
+                  }));
                 },
               ),
               MyButton(
