@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "813059697068",
+    "project_id": "sudachat-ms",
+    "storage_bucket": "sudachat-ms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813059697068:android:71dc8cb24d1d488a03b209",
+        "android_client_info": {
+          "package_name": "com.example.sudachat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813059697068-tt3vpf2pld6kklqentlbs53av1hqbudu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU5yF5vNhevCtvnwv1IaP8nKKG3Muyg1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813059697068-tt3vpf2pld6kklqentlbs53av1hqbudu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
