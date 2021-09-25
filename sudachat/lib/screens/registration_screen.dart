@@ -82,10 +82,10 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     //   final newUser =
                     //       await _auth.createUserWithEmailAndPassword(
                     //           email: email, password: password);
-                    //   Navigator.of(context)
-                    //       .push(MaterialPageRoute(builder: (context) {
-                    //     return ChatScreen();
-                    //   }));
+                      Navigator.of(context)
+                          .push(MaterialPageRoute(builder: (context) {
+                        return ChatScreen();
+                      }));
                     // } catch (e) {
                     //   print(e);
                     // }
