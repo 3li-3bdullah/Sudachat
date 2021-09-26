@@ -53,7 +53,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10))),
                   enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Color(0xffff8fc8), width: 1),
+                      borderSide: BorderSide(color: kSignColor, width: 1),
                       borderRadius: BorderRadius.all(Radius.circular(10))),
                   focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.blue, width: 2),
