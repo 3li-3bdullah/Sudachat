@@ -27,7 +27,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             children: <Widget>[
               Container(
                 height: 180,
-                child: Image.asset("images/chat.jpg"),
+                child: Image.asset("images/chat.png"),
               ),
               SizedBox(height: 50),
               TextField(
