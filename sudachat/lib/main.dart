@@ -23,3 +23,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+//in app/gradle add
+//implementation 'com.google.firebase:firebase-auth'
