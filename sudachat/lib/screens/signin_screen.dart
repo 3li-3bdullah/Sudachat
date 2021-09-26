@@ -62,7 +62,7 @@ class _SignInScreenState extends State<SignInScreen> {
               ),
               SizedBox(height: 10),
               MyButton(
-                  color: Color(0xffff8fc8),
+                  color: kSignColor,
                   title: "Sign in",
                   onPressed: () {
                   }),
