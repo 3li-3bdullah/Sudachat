@@ -39,7 +39,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 decoration: InputDecoration(
                   hintText: "Enter your Email",
                   contentPadding:
-                      EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                     const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10))),
                   enabledBorder: OutlineInputBorder(
