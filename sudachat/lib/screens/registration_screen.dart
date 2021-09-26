@@ -77,18 +77,18 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               MyButton(
                   color: kRegisterColor,
                   title: "Register",
-                  onPressed: ()  {
-                    // try {
-                    //   final newUser =
-                    //       await _auth.createUserWithEmailAndPassword(
-                    //           email: email, password: password);
+                  onPressed: () async {
+                    try {
+                      final newUser =
+                          await _auth.createUserWithEmailAndPassword(
+                              email: email, password: password);
                       Navigator.of(context)
                           .push(MaterialPageRoute(builder: (context) {
                         return ChatScreen();
                       }));
-                    // } catch (e) {
-                    //   print(e);
-                    // }
+                    } catch (e) {
+                      print(e);
+                    }
                   }),
             ]),
       ),
