@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 //import 'package:firebase_auth/firebase_auth.dart';
-import '../widgets/constants.dart';
+//import '../widgets/constants.dart';
 
 class ChatScreen extends StatefulWidget {
   @override
@@ -37,7 +37,7 @@ class _ChatScreenState extends State<ChatScreen> {
         title: Row(children: <Widget>[
           Container(
               decoration: BoxDecoration(image: DecorationImage(
-                  image: AssetImage("images/chat.jpg") , fit: BoxFit.cover), shape:BoxShape.circle),
+                  image: AssetImage("images/chat.png") , fit: BoxFit.cover), shape:BoxShape.circle),
             ),
           // SizedBox(height: 10),
           Expanded(child: Text("MessageMe"))
