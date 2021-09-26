@@ -1,6 +1,6 @@
 # sudachat
 
-A new Flutter project.
+Sudachat is a chat application designed to chatting in Sudanese accent.
 
 ## Getting Started
 
