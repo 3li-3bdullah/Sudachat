@@ -43,7 +43,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               MyButton(
                  // color: Color(0xff1d5bb5) as Color,
                  color : kRegisterColor,
-
                   title: "Register",
                   onPressed: () {
                     Navigator.of(context)
