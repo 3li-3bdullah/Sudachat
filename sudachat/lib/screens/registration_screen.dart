@@ -33,9 +33,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               TextField(
                 keyboardType: TextInputType.emailAddress,
                 textAlign: TextAlign.center,
-                // onChanged: (value) {
-                //   email = value;
-                // },
+                onChanged: (value) {
+                  email = value;
+                },
                 decoration: InputDecoration(
                   hintText: "Enter your Email",
                   contentPadding:
@@ -55,9 +55,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               TextField(
                 obscureText: true,
                 textAlign: TextAlign.center,
-                // onChanged: (value) {
-                //   password = value;
-                // },
+                onChanged: (value) {
+                  password = value;
+                },
                 decoration: InputDecoration(
                   hintText: "Enter your password",
                   contentPadding:
