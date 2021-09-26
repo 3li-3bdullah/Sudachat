@@ -1,4 +1,4 @@
 # Sudachat
 
-Sudachat is a chat application designed to chatting in Sudanese accent,and anyone form any country use it :) .
+Hi! , Welcome in the best world,world of Sudachat ^_^ , Sudachat is a chat application designed to chatting in Sudanese accent -_^ .
 
