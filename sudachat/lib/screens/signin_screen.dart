@@ -32,11 +32,11 @@ class _SignInScreenState extends State<SignInScreen> {
                   height: 180,
                   child: Image.asset("images/login/signin.jpg"),
                 ),
-                Text("يلا انشي حسابك ب مزاج",
+                Text("يلا بس إميلك الكان سجلت بيه",
                     style: TextStyle(
                         fontSize: 30,
                         fontWeight: FontWeight.w900,
-                        color: kRegisterColor,
+                        color: ksignBPage,
                         )),
               SizedBox(height: 40),
                 TextField(
@@ -52,10 +52,10 @@ class _SignInScreenState extends State<SignInScreen> {
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(10))),
                     enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: kSignColor, width: 1),
+                        borderSide: BorderSide(color: kborder, width: 1),
                         borderRadius: BorderRadius.all(Radius.circular(10))),
                     focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.blue, width: 2),
+                        borderSide: BorderSide(color: kborder, width: 2),
                         borderRadius: BorderRadius.all(Radius.circular(10))),
                   ),
                 ),
@@ -73,16 +73,16 @@ class _SignInScreenState extends State<SignInScreen> {
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(10))),
                     enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: kSignColor, width: 1),
+                        borderSide: BorderSide(color: kborder, width: 1),
                         borderRadius: BorderRadius.all(Radius.circular(10))),
                     focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.blue, width: 2),
+                        borderSide: BorderSide(color: kborder, width: 2),
                         borderRadius: BorderRadius.all(Radius.circular(10))),
                   ),
                 ),
                 SizedBox(height: 10),
                 MyButton(
-                    color: kSignColor,
+                    color: ksignBPage,
                     title: "Sign in",
                     onPressed: () async {
                       setState(() {
