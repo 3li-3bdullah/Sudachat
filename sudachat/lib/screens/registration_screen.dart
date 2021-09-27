@@ -92,6 +92,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                             .push(MaterialPageRoute(builder: (context) {
                           return ChatScreen();
                         }));
+                        setState(() {
+                          showSpinner = false;
+                        });
                       } catch (e) {
                         print(e);
                       }
