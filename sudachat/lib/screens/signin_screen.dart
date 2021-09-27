@@ -73,8 +73,8 @@ class _SignInScreenState extends State<SignInScreen> {
               MyButton(
                   color: kSignColor,
                   title: "Sign in",
-                  onPressed: () {
-                    final user = _auth.signInWithEmailAndPassword(
+                  onPressed: () async {
+                    final user = await _auth.signInWithEmailAndPassword(
                       email:email,password:password
                     );
                   }),
