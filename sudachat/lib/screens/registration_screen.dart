@@ -3,6 +3,7 @@ import '../widgets/constants.dart';
 import '../widgets/my_button.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../screens/chat_screen.dart';
+import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
 class RegistrationScreen extends StatefulWidget {
   @override
@@ -14,6 +15,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
   late String email;
   late String password;
+
+  bool showSpinner = false;
 
   @override
   Widget build(BuildContext context) {
@@ -39,12 +42,11 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 decoration: InputDecoration(
                   hintText: "Enter your Email",
                   contentPadding:
-                     const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10))),
                   enabledBorder: OutlineInputBorder(
-                      borderSide:
-                          BorderSide(color: kSignColor, width: 1),
+                      borderSide: BorderSide(color: kSignColor, width: 1),
                       borderRadius: BorderRadius.all(Radius.circular(10))),
                   focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: kRegisterColor, width: 2),
@@ -61,12 +63,11 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 decoration: InputDecoration(
                   hintText: "Enter your password",
                   contentPadding:
-                    const  EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10))),
                   enabledBorder: OutlineInputBorder(
-                      borderSide:
-                          BorderSide(color: kSignColor, width: 1),
+                      borderSide: BorderSide(color: kSignColor, width: 1),
                       borderRadius: BorderRadius.all(Radius.circular(10))),
                   focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: kRegisterColor, width: 2),
