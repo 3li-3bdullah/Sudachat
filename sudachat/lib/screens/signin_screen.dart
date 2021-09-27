@@ -52,7 +52,9 @@ class _SignInScreenState extends State<SignInScreen> {
               TextField(
                 obscureText: true,
                 textAlign: TextAlign.center,
-                onChanged: (value) {},
+                onChanged: (value) {
+                  password = value;
+                },
                 decoration: InputDecoration(
                   hintText: "Enter your password",
                   contentPadding:
