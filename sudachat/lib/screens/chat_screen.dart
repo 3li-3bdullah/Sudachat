@@ -36,72 +36,72 @@ class _ChatScreenState extends State<ChatScreen> {
         backgroundColor: Colors.green,
         title: Row(children: <Widget>[
           Container(
-              decoration: BoxDecoration(image: DecorationImage(
-                  image: AssetImage("images/chat.png") , fit: BoxFit.cover), shape:BoxShape.circle),
-            ),
-          // SizedBox(height: 10),
-          Expanded(child: Text("MessageMe"))
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage("images/chat.png"), fit: BoxFit.cover),
+                shape: BoxShape.circle),
+          ),
+           SizedBox(height: 10),
+          Text("MessageMe")
         ]),
         actions: <Widget>[
-          IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.close)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.close)),
         ],
       ),
       body: Stack(
-          children: <Widget>[
-             //Column(
-            //  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //   crossAxisAlignment: CrossAxisAlignment.end,
-            //   children: <Widget>[
-           // Container(),
-           Positioned(
-                bottom: 0,
-                child: Container(
-                  height: 60,
-                  width: MediaQuery.of(context).size.width,
-                  child: Column(children: <Widget>[
-                    Container(
-                      decoration: BoxDecoration(
-                          border: Border(top: BorderSide(color: Colors.grey))),
-                      child: Row(children: <Widget>[
-                        IconButton(
-                            icon: Icon(Icons.camera_alt_outlined,
-                                color: Colors.purple),
-                            onPressed: () {}),
-                        Container(
-                            padding: EdgeInsets.symmetric(
-                                horizontal: 5, vertical: 5),
-                            width: MediaQuery.of(context).size.width - 70,
-                            child: TextFormField(
-                              decoration: InputDecoration(
-                                hintText: "أكتب هنا",
-                                filled: true,
-                                fillColor: Colors.grey[200],
-                                suffixIcon: IconButton(
-                                    icon: Icon(Icons.send, color: Colors.green),
-                                    onPressed: () {}),
-                                contentPadding: EdgeInsets.all(5),
-                                focusedBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(60),
-                                    borderSide:
-                                        BorderSide(style: BorderStyle.none)),
-                                enabledBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(60),
-                                    borderSide:
-                                        BorderSide(style: BorderStyle.none)),
-                                errorBorder: InputBorder.none,
-                                disabledBorder: InputBorder.none,
-                              ),
-                            )),
-                      ]),
-                    )
-                  ]),
-                )),
-           
-         // ])
-          ],
-          ),
+        children: <Widget>[
+          //Column(
+          //  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //   crossAxisAlignment: CrossAxisAlignment.end,
+          //   children: <Widget>[
+          // Container(),
+          Positioned(
+              bottom: 0,
+              child: Container(
+                height: 60,
+                width: MediaQuery.of(context).size.width,
+                child: Column(children: <Widget>[
+                  Container(
+                    decoration: BoxDecoration(
+                        border: Border(top: BorderSide(color: Colors.grey))),
+                    child: Row(children: <Widget>[
+                      IconButton(
+                          icon: Icon(Icons.camera_alt_outlined,
+                              color: Colors.purple),
+                          onPressed: () {}),
+                      Container(
+                          padding:
+                            const  EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                          width: MediaQuery.of(context).size.width - 70,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              hintText: "أكتب هنا",
+                              filled: true,
+                              fillColor: Colors.grey[200],
+                              suffixIcon: IconButton(
+                                  icon: Icon(Icons.send, color: Colors.green),
+                                  onPressed: () {}),
+                              contentPadding: EdgeInsets.all(5),
+                              focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(60),
+                                  borderSide:
+                                      BorderSide(style: BorderStyle.none)),
+                              enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(60),
+                                  borderSide:
+                                      BorderSide(style: BorderStyle.none)),
+                              errorBorder: InputBorder.none,
+                              disabledBorder: InputBorder.none,
+                            ),
+                          )),
+                    ]),
+                  )
+                ]),
+              )),
+
+          // ])
+        ],
+      ),
     );
   }
 }
