@@ -76,16 +76,16 @@ class _SignInScreenState extends State<SignInScreen> {
                   title: "Sign in",
                   onPressed: () async {
                     try {
-                                          final user = await _auth.signInWithEmailAndPassword(
-                      email:email,password:password);
-                    if(user != null){
-                      Navigator.of(context).push(MaterialPageRoute(builder: (context){
-                        return ChatScreen();
-                      }));
-                    }
-
+                      final user = await _auth.signInWithEmailAndPassword(
+                          email: email, password: password);
+                      if (user != null) {
+                        Navigator.of(context)
+                            .push(MaterialPageRoute(builder: (context) {
+                          return ChatScreen();
+                        }));
+                      }
                     } catch (e) {
-                      
+                      print(e);
                     }
                   }),
             ]),
