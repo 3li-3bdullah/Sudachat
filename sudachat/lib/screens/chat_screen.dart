@@ -41,11 +41,16 @@ class _ChatScreenState extends State<ChatScreen> {
                     image: AssetImage("images/chat.png"), fit: BoxFit.cover),
                 shape: BoxShape.circle),
           ),
-           SizedBox(height: 10),
+          SizedBox(height: 10),
           Text("MessageMe")
         ]),
         actions: <Widget>[
-          IconButton(onPressed: () {}, icon: Icon(Icons.close)),
+          IconButton(
+              onPressed: () {
+                _auth.signOut();
+                Navigator.pop(context);
+              },
+              icon: Icon(Icons.close)),
         ],
       ),
       body: Stack(
@@ -70,8 +75,8 @@ class _ChatScreenState extends State<ChatScreen> {
                               color: Colors.purple),
                           onPressed: () {}),
                       Container(
-                          padding:
-                            const  EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 5, vertical: 5),
                           width: MediaQuery.of(context).size.width - 70,
                           child: TextFormField(
                             decoration: InputDecoration(
