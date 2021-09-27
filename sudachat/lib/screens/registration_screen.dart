@@ -57,7 +57,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                         borderSide: BorderSide(color: kborder, width: 1),
                         borderRadius: BorderRadius.all(Radius.circular(10))),
                     focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: kRegisterColor, width: 2),
+                        borderSide: BorderSide(color: kborder, width: 2),
                         borderRadius: BorderRadius.all(Radius.circular(10))),
                   ),
                 ),
