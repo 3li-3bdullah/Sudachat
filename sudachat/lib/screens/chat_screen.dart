@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import '../widgets/constants.dart';
 //import '../widgets/constants.dart';
 
 class ChatScreen extends StatefulWidget {
@@ -10,6 +11,7 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   final _auth = FirebaseAuth.instance;
   late User signedInUser;
+  //String? messageText;
 
   @override
   void initState() {
@@ -35,7 +37,7 @@ class _ChatScreenState extends State<ChatScreen> {
       appBar: AppBar(
         backgroundColor: Colors.green,
         title: Row(children: <Widget>[
-          Image.asset("images/chat.png" , height: 25),
+          Image.asset("images/chat.png", height: 25),
           SizedBox(height: 10),
           Text("MessageMe")
         ]),
@@ -48,7 +50,72 @@ class _ChatScreenState extends State<ChatScreen> {
               icon: Icon(Icons.close)),
         ],
       ),
-      body: Stack(
+      body: SafeArea(
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+            Container(
+                decoration: BoxDecoration(
+                    border:
+                        Border(top: BorderSide(color: Colors.blue, width: 2)))),
+            Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Expanded(
+                      child: TextField(
+                    onChanged: (value) {},
+                    decoration: InputDecoration(
+                        contentPadding:
+                            EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+                        hintText: "اكتب هنا",
+                        border: InputBorder.none),
+                  )),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text("send",
+                        style: TextStyle(
+                            color: kRegisterColor,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18)),
+                  )
+                ]),
+          ])),
+    );
+  }
+}
+/* 
+ Container(
+                decoration: BoxDecoration(
+                  border:
+                      Border(top: BorderSide(color: Colors.green, width: 2)),
+                ),
+                child: Row(
+                   // crossAxisAlignment: CrossAxisAlignment.center,
+                   mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Expanded(
+                        child: TextField(
+                          onChanged: (vlaue) {},
+                          decoration: InputDecoration(
+                              contentPadding: EdgeInsets.symmetric(
+                                  vertical: 10, horizontal: 20),
+                              hintText: "Write your message here...",
+                              border: InputBorder.none),
+                        ),
+                      ),
+                      TextButton(
+                          onPressed: () {},
+                          child: Text("send",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: kRegisterColor,
+                                  fontSize: 18)))
+                    ])),
+*/
+
+/*
+Stack(
         children: <Widget>[
           //Column(
           //  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -102,35 +169,4 @@ class _ChatScreenState extends State<ChatScreen> {
           // ])
         ],
       ),
-    );
-  }
-}
-/* 
- Container(
-                decoration: BoxDecoration(
-                  border:
-                      Border(top: BorderSide(color: Colors.green, width: 2)),
-                ),
-                child: Row(
-                   // crossAxisAlignment: CrossAxisAlignment.center,
-                   mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Expanded(
-                        child: TextField(
-                          onChanged: (vlaue) {},
-                          decoration: InputDecoration(
-                              contentPadding: EdgeInsets.symmetric(
-                                  vertical: 10, horizontal: 20),
-                              hintText: "Write your message here...",
-                              border: InputBorder.none),
-                        ),
-                      ),
-                      TextButton(
-                          onPressed: () {},
-                          child: Text("send",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: kRegisterColor,
-                                  fontSize: 18)))
-                    ])),
-*/
+ */
