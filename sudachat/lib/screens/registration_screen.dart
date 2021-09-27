@@ -49,6 +49,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   },
                   decoration: InputDecoration(
                     hintText: "Enter your Email",
+                    suffixIcon: Icon(Icons.email_outlined , color:kRegisterColor),
                     contentPadding: const EdgeInsets.symmetric(
                         vertical: 10, horizontal: 20),
                     border: OutlineInputBorder(
