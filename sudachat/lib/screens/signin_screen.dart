@@ -31,7 +31,9 @@ class _SignInScreenState extends State<SignInScreen> {
               TextField(
                 keyboardType: TextInputType.emailAddress,
                 textAlign: TextAlign.center,
-                onChanged: (value) {},
+                onChanged: (value) {
+                  email = value;
+                },
                 decoration: InputDecoration(
                   hintText: "Enter your Email",
                   contentPadding:
