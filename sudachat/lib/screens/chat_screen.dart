@@ -32,6 +32,9 @@ class _ChatScreenState extends State<ChatScreen> {
       print(e);
     }
   }
+  void getMessages(){
+    
+  }
 
   @override
   Widget build(BuildContext context) {
