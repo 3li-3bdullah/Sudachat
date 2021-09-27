@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../screens/chat_screen.dart';
 import '../widgets/my_button.dart';
 import '../widgets/constants.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -77,6 +78,11 @@ class _SignInScreenState extends State<SignInScreen> {
                     final user = await _auth.signInWithEmailAndPassword(
                       email:email,password:password
                     );
+                    if(user != null){
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                        return ChatScreen();
+                      });
+                    }
                   }),
             ]),
       ),
