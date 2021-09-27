@@ -70,7 +70,14 @@ class _SignInScreenState extends State<SignInScreen> {
                 ),
               ),
               SizedBox(height: 10),
-              MyButton(color: kSignColor, title: "Sign in", onPressed: () {}),
+              MyButton(
+                  color: kSignColor,
+                  title: "Sign in",
+                  onPressed: () {
+                    final user = _auth.signInWithEmailAndPassword(
+                      email:email,password:password
+                    );
+                  }),
             ]),
       ),
     );
