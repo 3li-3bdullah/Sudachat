@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/my_button.dart';
 import '../widgets/constants.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class SignInScreen extends StatefulWidget {
   @override
@@ -8,6 +9,10 @@ class SignInScreen extends StatefulWidget {
 }
 
 class _SignInScreenState extends State<SignInScreen> {
+  final _auth = FirebaseAuth.instance;
+  late String email;
+  late String password;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,11 +66,7 @@ class _SignInScreenState extends State<SignInScreen> {
                 ),
               ),
               SizedBox(height: 10),
-              MyButton(
-                  color: kSignColor,
-                  title: "Sign in",
-                  onPressed: () {
-                  }),
+              MyButton(color: kSignColor, title: "Sign in", onPressed: () {}),
             ]),
       ),
     );
