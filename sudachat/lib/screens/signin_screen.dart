@@ -75,13 +75,17 @@ class _SignInScreenState extends State<SignInScreen> {
                   color: kSignColor,
                   title: "Sign in",
                   onPressed: () async {
-                    final user = await _auth.signInWithEmailAndPassword(
-                      email:email,password:password
-                    );
+                    try {
+                                          final user = await _auth.signInWithEmailAndPassword(
+                      email:email,password:password);
                     if(user != null){
                       Navigator.of(context).push(MaterialPageRoute(builder: (context){
                         return ChatScreen();
-                      });
+                      }));
+                    }
+
+                    } catch (e) {
+                      
                     }
                   }),
             ]),
