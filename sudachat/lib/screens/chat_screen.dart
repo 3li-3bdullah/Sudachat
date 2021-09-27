@@ -12,7 +12,7 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   final _auth = FirebaseAuth.instance;
   late User signedInUser;
-  //String? messageText;
+  String? messageText;
 
   @override
   void initState() {
