@@ -21,8 +21,8 @@ class _SignInScreenState extends State<SignInScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: ModalProgressHUD(
-            isAsyncCall:showSpinner,
-              child: Padding(
+        isAsyncCall: showSpinner,
+        child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24),
           child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -79,6 +79,9 @@ class _SignInScreenState extends State<SignInScreen> {
                     color: kSignColor,
                     title: "Sign in",
                     onPressed: () async {
+                      setState(() {
+                        showSpinner = true;
+                      });
                       try {
                         final user = await _auth.signInWithEmailAndPassword(
                             email: email, password: password);
@@ -87,6 +90,9 @@ class _SignInScreenState extends State<SignInScreen> {
                               .push(MaterialPageRoute(builder: (context) {
                             return ChatScreen();
                           }));
+                          setState(() {
+                            showSpinner = false;
+                          });
                         }
                       } catch (e) {
                         print(e);
