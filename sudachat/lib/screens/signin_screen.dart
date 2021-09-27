@@ -30,7 +30,7 @@ class _SignInScreenState extends State<SignInScreen> {
               children: <Widget>[
                 Container(
                   height: 180,
-                  child: Image.asset("images/chat.png"),
+                  child: Image.asset("images/login/signin.jpg"),
                 ),
                 SizedBox(height: 50),
                 TextField(
