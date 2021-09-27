@@ -32,7 +32,13 @@ class _SignInScreenState extends State<SignInScreen> {
                   height: 180,
                   child: Image.asset("images/login/signin.jpg"),
                 ),
-                SizedBox(height: 50),
+                Text("يلا انشي حسابك ب مزاج",
+                    style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.w900,
+                        color: kRegisterColor,
+                        )),
+              SizedBox(height: 40),
                 TextField(
                   keyboardType: TextInputType.emailAddress,
                   textAlign: TextAlign.center,
