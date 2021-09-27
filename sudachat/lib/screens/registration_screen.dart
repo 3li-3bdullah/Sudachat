@@ -23,8 +23,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: ModalProgressHUD(
-         inAsyncCall: showSpinner,
-              child: Padding(
+        inAsyncCall: showSpinner,
+        child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24),
           child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -43,8 +43,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   },
                   decoration: InputDecoration(
                     hintText: "Enter your Email",
-                    contentPadding:
-                        const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                    contentPadding: const EdgeInsets.symmetric(
+                        vertical: 10, horizontal: 20),
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(10))),
                     enabledBorder: OutlineInputBorder(
@@ -64,8 +64,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   },
                   decoration: InputDecoration(
                     hintText: "Enter your password",
-                    contentPadding:
-                        const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                    contentPadding: const EdgeInsets.symmetric(
+                        vertical: 10, horizontal: 20),
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(10))),
                     enabledBorder: OutlineInputBorder(
@@ -81,7 +81,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     color: kRegisterColor,
                     title: "Register",
                     onPressed: () async {
-                      
+                      setState(() {
+                        showSpinner = true;
+                      });
                       try {
                         final newUser =
                             await _auth.createUserWithEmailAndPassword(
