@@ -35,7 +35,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   void getMessages() async {
   final messages=  _firestore.collection('messages').get();
-  for(messages.docs){}
+  for(var message in messages.docs){}
   }
 
   @override
