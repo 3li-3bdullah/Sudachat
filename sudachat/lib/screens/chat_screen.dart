@@ -35,12 +35,7 @@ class _ChatScreenState extends State<ChatScreen> {
       appBar: AppBar(
         backgroundColor: Colors.green,
         title: Row(children: <Widget>[
-          Container(
-            decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage("images/chat.png"), fit: BoxFit.cover),
-                shape: BoxShape.circle),
-          ),
+          Image.asset("images/chat.png" , height: 25),
           SizedBox(height: 10),
           Text("MessageMe")
         ]),
