@@ -77,7 +77,9 @@ class _ChatScreenState extends State<ChatScreen> {
                   )),
                   TextButton(
                     onPressed: () {
-                      
+                      _firestore.collection('messages').add({
+                        
+                      });
                     },
                     child: Text("send",
                         style: TextStyle(
