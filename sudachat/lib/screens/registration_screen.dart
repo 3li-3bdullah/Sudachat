@@ -34,11 +34,11 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   height: 180,
                   child: Image.asset("images/login/register.jpg"),
                 ),
-                  Text("يلا بس بريدك السجلت بيه",
+                  Text("ايوه،إنشاء حساب من هنا",
                     style: TextStyle(
                         fontSize: 30,
                         fontWeight: FontWeight.w900,
-                        color: kRegisterColor,
+                        color: kregisterBPage
                         )),
               SizedBox(height: 40),
                 TextField(
@@ -75,16 +75,16 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(10))),
                     enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: kSignColor, width: 1),
+                        borderSide: BorderSide(color: kborder, width: 1),
                         borderRadius: BorderRadius.all(Radius.circular(10))),
                     focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: kRegisterColor, width: 2),
+                        borderSide: BorderSide(color: kborder, width: 2),
                         borderRadius: BorderRadius.all(Radius.circular(10))),
                   ),
                 ),
                 SizedBox(height: 10),
                 MyButton(
-                    color: kRegisterColor,
+                    color: kregisterBPage,
                     title: "Register",
                     onPressed: () async {
                       setState(() {
