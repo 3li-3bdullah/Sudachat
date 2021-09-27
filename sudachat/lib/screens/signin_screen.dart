@@ -47,6 +47,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   },
                   decoration: InputDecoration(
                     hintText: "Enter your Email",
+                    
                     contentPadding:
                         EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                     border: OutlineInputBorder(
@@ -68,7 +69,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   },
                   decoration: InputDecoration(
                     hintText: "Enter your password",
-                    suffixIcon: Icon(Icons.email_outlined , color:kSignColor),
+                    suffixIcon: Icon(Icons.lock_outline ,color:kSignColor),
                     contentPadding:
                         EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                     border: OutlineInputBorder(
