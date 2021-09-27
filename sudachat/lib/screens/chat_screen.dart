@@ -10,8 +10,9 @@ class ChatScreen extends StatefulWidget {
 }
 
 class _ChatScreenState extends State<ChatScreen> {
+  final _firestore = FirebaseFirestore.instance;
   final _auth = FirebaseAuth.instance;
-  late User signedInUser;//This will give us email
+  late User signedInUser; //This will give us email
   String? messageText; //This will give us messages
 
   @override
@@ -75,7 +76,9 @@ class _ChatScreenState extends State<ChatScreen> {
                         border: InputBorder.none),
                   )),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      
+                    },
                     child: Text("send",
                         style: TextStyle(
                             color: kRegisterColor,
