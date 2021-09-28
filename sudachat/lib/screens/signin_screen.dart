@@ -21,7 +21,7 @@ class _SignInScreenState extends State<SignInScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: ModalProgressHUD(
-        isAsyncCall: showSpinner,
+        inAsyncCall: showSpinner,
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24),
           child: Column(
