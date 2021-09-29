@@ -39,7 +39,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       style: TextStyle(
                           fontSize: 30,
                           fontWeight: FontWeight.w900,
-                          color: kregisterBPage
+                          color: kSignColor
                           )),
                   ),
               SizedBox(height: 40),
