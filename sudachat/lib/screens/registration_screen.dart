@@ -34,12 +34,14 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   height: 180,
                   child: Image.asset("images/login/register.jpg"),
                 ),
-                  Text("ايوه،إنشاء حساب من هنا",
-                    style: TextStyle(
-                        fontSize: 30,
-                        fontWeight: FontWeight.w900,
-                        color: kregisterBPage
-                        )),
+                  Center(
+                    child: Text("ايوه،إنشاء حساب من هنا",
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w900,
+                          color: kregisterBPage
+                          )),
+                  ),
               SizedBox(height: 40),
                 TextField(
                   keyboardType: TextInputType.emailAddress,
