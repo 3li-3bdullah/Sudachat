@@ -71,7 +71,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   },
                   decoration: InputDecoration(
                     hintText: "Enter your password",
-                    suffixIcon: Icon(Icons.lock_outline ,color:kSignColor),
+                    suffixIcon: Icon(Icons.lock_outline ,color:Colors.green),
                     contentPadding:
                         EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                     border: OutlineInputBorder(
