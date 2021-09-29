@@ -39,13 +39,12 @@ class _ChatScreenState extends State<ChatScreen> {
   //     print(message.data());
   //   }
   // }
-  void messagesStreams() async{
-    for (var snapshot in await _firestore.collection('messages').snapshots()){
-        for(var message in snapshot.docs){
-          
-        }
+  void messagesStreams() async {
+    for (var snapshot in await _firestore.collection('messages').snapshots()) {
+      for (var message in snapshot.docs) {
+        print(message.data());
+      }
     }
-
   }
 
   @override
