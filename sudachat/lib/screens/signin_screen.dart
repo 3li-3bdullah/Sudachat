@@ -49,7 +49,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   },
                   decoration: InputDecoration(
                     hintText: "Enter your Email",
-                    suffixIcon: Icon(Icons.email_outlined , color:kSignColor),
+                    suffixIcon: Icon(Icons.email_outlined , color:Colors.green),
                     contentPadding:
                         EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                     border: OutlineInputBorder(
