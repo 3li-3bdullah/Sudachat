@@ -51,7 +51,7 @@ class _ChatScreenState extends State<ChatScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.blue,
         title: Row(children: <Widget>[
           Image.asset("images/chat.png", height: 25),
           SizedBox(height: 10),
