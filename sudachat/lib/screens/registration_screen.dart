@@ -88,7 +88,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 ),
                 SizedBox(height: 10),
                 MyButton(
-                    color: kregisterBPage,
+                    color: kSignColor,
                     title: "Register",
                     onPressed: () async {
                       setState(() {
