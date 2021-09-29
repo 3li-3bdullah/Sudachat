@@ -60,7 +60,7 @@ class _ChatScreenState extends State<ChatScreen> {
         actions: <Widget>[
           IconButton(
               onPressed: () {
-                
+                messagesStreams();
                 // _auth.signOut();
                 // Navigator.pop(context);
               },
