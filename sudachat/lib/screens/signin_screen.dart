@@ -32,12 +32,14 @@ class _SignInScreenState extends State<SignInScreen> {
                   height: 180,
                   child: Image.asset("images/login/signin.jpg"),
                 ),
-                Text("يلا بس إميلك الكان سجلت بيه",
-                    style: TextStyle(
-                        fontSize: 30,
-                        fontWeight: FontWeight.w900,
-                        color: ksignBPage,
-                        )),
+                Center(
+                  child: Text("يلا بس إميلك الكان سجلت بيه",
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w900,
+                          color: ksignBPage,
+                          )),
+                ),
               SizedBox(height: 40),
                 TextField(
                   keyboardType: TextInputType.emailAddress,
