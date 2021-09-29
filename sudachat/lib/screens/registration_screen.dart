@@ -73,7 +73,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   },
                   decoration: InputDecoration(
                     hintText: "Enter your password",
-                    suffixIcon: Icon(Icons.lock_outline , color:kRegisterColor),
+                    suffixIcon: Icon(Icons.lock_outline , color:kSignColor),
                     contentPadding: const EdgeInsets.symmetric(
                         vertical: 10, horizontal: 20),
                     border: OutlineInputBorder(
