@@ -58,7 +58,7 @@ class _SignInScreenState extends State<SignInScreen> {
                         borderSide: BorderSide(color: kborder, width: 1),
                         borderRadius: BorderRadius.all(Radius.circular(10))),
                     focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: kborder, width: 2),
+                        borderSide: BorderSide(color: Colors.green, width: 2),
                         borderRadius: BorderRadius.all(Radius.circular(10))),
                   ),
                 ),
@@ -80,7 +80,7 @@ class _SignInScreenState extends State<SignInScreen> {
                         borderSide: BorderSide(color: kborder, width: 1),
                         borderRadius: BorderRadius.all(Radius.circular(10))),
                     focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: kborder, width: 2),
+                        borderSide: BorderSide(color: Colors.green , width: 2),
                         borderRadius: BorderRadius.all(Radius.circular(10))),
                   ),
                 ),
