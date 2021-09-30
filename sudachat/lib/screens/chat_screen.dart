@@ -79,7 +79,7 @@ class _ChatScreenState extends State<ChatScreen> {
                         Border(top: BorderSide(color: Colors.blue, width: 2)))),
             Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
+                children: [
                   Expanded(
                       child: TextField(
                     onChanged: (value) {
