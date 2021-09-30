@@ -5,3 +5,5 @@ const kRegisterColor = Color(0xff1d5bb5);
 const ksignBPage = Color(0xff6487BD);
 const kregisterBPage = Color(0xfff93f43);
 const kborder = Color(0xfffbbb12);
+const kappbar = Color(0xffff7774);
+
