@@ -76,7 +76,7 @@ class _ChatScreenState extends State<ChatScreen> {
             Container(
                 decoration: BoxDecoration(
                     border:
-                        Border(top: BorderSide(color: Colors.blue, width: 2)))),
+                        Border(top: BorderSide(color: kappbar, width: 2)))),
             Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
