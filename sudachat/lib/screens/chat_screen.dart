@@ -65,7 +65,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 // _auth.signOut();
                 // Navigator.pop(context);
               },
-              icon: Icon(Icons.close)),
+              icon: Icon(Icons.download_outlined)),
         ],
       ),
       body: SafeArea(
