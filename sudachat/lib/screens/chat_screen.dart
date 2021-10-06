@@ -73,40 +73,41 @@ class _ChatScreenState extends State<ChatScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
+            StreamBuilder<QuerySnapshot>(
+                stream: _firestore.collection('messages').snapshots(),
+                builder: (context, snapshot) {
+                  return Column();
+                }),
             Container(
                 decoration: BoxDecoration(
-                    border:
-                        Border(top: BorderSide(color: kappbar, width: 2)))),
-            Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Expanded(
-                      child: TextField(
-                    onChanged: (value) {
-                      messageText = value;
-                    },
-                    decoration: InputDecoration(
-                        contentPadding:
-                            EdgeInsets.symmetric(horizontal: 10, vertical: 20),
-                        hintText: "اكتب هنا",
-                        border: InputBorder.none),
-                  )),
-                  TextButton(
-                    onPressed: () {
-                      _firestore.collection('messages').add({
-                        'text': messageText,
-                        'sender': signedInUser.email,
-                      });
-                    },
-                    child: Text("send",
-                        style: TextStyle(
-                            color: kRegisterColor,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18)),
-                  )
-                ]),
+                    border: Border(top: BorderSide(color: kappbar, width: 2)))),
+            Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
+              Expanded(
+                  child: TextField(
+                onChanged: (value) {
+                  messageText = value;
+                },
+                decoration: InputDecoration(
+                    contentPadding:
+                        EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+                    hintText: "اكتب هنا",
+                    border: InputBorder.none),
+              )),
+              TextButton(
+                onPressed: () {
+                  _firestore.collection('messages').add({
+                    'text': messageText,
+                    'sender': signedInUser.email,
+                  });
+                },
+                child: Text("send",
+                    style: TextStyle(
+                        color: kRegisterColor,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18)),
+              )
+            ]),
           ])),
     );
   }
 }
-
