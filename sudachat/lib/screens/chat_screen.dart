@@ -76,7 +76,10 @@ class _ChatScreenState extends State<ChatScreen> {
             StreamBuilder<QuerySnapshot>(
                 stream: _firestore.collection('messages').snapshots(),
                 builder: (context, snapshot) {
-                  return Column();
+                  List<Text> messageWidgets = [];
+                  return Column(
+                    children: messageWidgets,
+                  );
                 }),
             Container(
                 decoration: BoxDecoration(
