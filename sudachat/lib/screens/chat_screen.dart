@@ -81,6 +81,10 @@ class _ChatScreenState extends State<ChatScreen> {
                     //will add a spinner
                   }
                   final messages = snapshot.data!.docs;
+                  for (String message in messages) {
+                    final messageText = message.get('text');
+                    final messageSender = message.get('sender');
+                  }
                   return Column(
                     children: messageWidgets,
                   );
