@@ -84,6 +84,8 @@ class _ChatScreenState extends State<ChatScreen> {
                   for (String message in messages) {
                     final messageText = message.get('text');
                     final messageSender = message.get('sender');
+                    final messageWidget = Text('$messageText - $messageSender');
+                    messageWidget.add(messageWidget);
                   }
                   return Column(
                     children: messageWidgets,
