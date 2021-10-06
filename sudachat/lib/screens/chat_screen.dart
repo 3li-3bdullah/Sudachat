@@ -78,7 +78,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 builder: (context, snapshot) {
                   List<Text> messageWidgets = [];
                   if (!snapshot.hasData) {
-                    //will add a spinner
+                    return Center(child: CircularProgressIndicator() );
                   }
                   final messages = snapshot.data!.docs;
                   for (String message in messages) {
