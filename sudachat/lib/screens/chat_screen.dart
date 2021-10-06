@@ -77,6 +77,10 @@ class _ChatScreenState extends State<ChatScreen> {
                 stream: _firestore.collection('messages').snapshots(),
                 builder: (context, snapshot) {
                   List<Text> messageWidgets = [];
+                  if (!snapshot.hasData) {
+                    //will add a spinner
+                  }
+                  final messages = snapshot.data.docs;
                   return Column(
                     children: messageWidgets,
                   );
