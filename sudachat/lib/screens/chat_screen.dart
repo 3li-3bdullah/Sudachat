@@ -57,7 +57,6 @@ class _ChatScreenState extends State<ChatScreen> {
           SizedBox(height: 10),
           Text("MessageMe")
         ]),
-        //removed <Widget>
         actions: [
           IconButton(
               onPressed: () {
