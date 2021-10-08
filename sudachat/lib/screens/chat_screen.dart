@@ -55,8 +55,6 @@ class _ChatScreenState extends State<ChatScreen> {
           IconButton(
               onPressed: () {
                 messagesStreams();
-                // _auth.signOut();
-                // Navigator.pop(context);
               },
               icon: Icon(Icons.download_outlined)),
         ],
