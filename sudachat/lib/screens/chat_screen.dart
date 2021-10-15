@@ -63,7 +63,7 @@ class _ChatScreenState extends State<ChatScreen> {
           child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
+              children: [
             StreamBuilder<QuerySnapshot>(
                 stream: _firestore.collection('messages').snapshots(),
                 builder: (context, snapshot) {
